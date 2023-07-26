@@ -1,0 +1,3732 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>dashboard-boostrap 0.1.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>dashboard-boostrap</h3>
+          <div class='mb1'><code>0.1.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#forgotpassformschema'
+                  class="">
+                  forgotPassFormSchema
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#forgotpassvalidationschema'
+                  class="">
+                  ForgotPassValidationSchema
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#loginformschema'
+                  class="">
+                  LoginFormSchema
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#loginvalidationschema'
+                  class="">
+                  LoginValidationSchema
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#registerformschema'
+                  class="">
+                  RegisterFormSchema
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#registervalidationschema'
+                  class="">
+                  RegisterValidationSchema
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#card'
+                  class="">
+                  Card
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#modal'
+                  class="">
+                  Modal
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#strengthcolor'
+                  class="">
+                  strengthColor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#strengthindicator'
+                  class="">
+                  strengthIndicator
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#forgotpass'
+                  class="">
+                  ForgotPass
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#login'
+                  class="">
+                  Login
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#register'
+                  class="">
+                  Register
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#errorpage'
+                  class="">
+                  ErrorPage
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#loadable'
+                  class="">
+                  Loadable
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#loader'
+                  class="">
+                  Loader
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#linechart'
+                  class="">
+                  LineChart
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#piechart'
+                  class="">
+                  PieChart
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#verticalchart'
+                  class="">
+                  VerticalChart
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#dashboard'
+                  class="">
+                  Dashboard
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mapone'
+                  class="">
+                  mapOne
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#maptwo'
+                  class="">
+                  mapTwo
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#authlayout'
+                  class="">
+                  AuthLayout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#errorlayout'
+                  class="">
+                  ErrorLayout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#alertsection'
+                  class="">
+                  AlertSection
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#header'
+                  class="">
+                  Header
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usersettings'
+                  class="">
+                  UserSettings
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#switchdarkmode'
+                  class="">
+                  switchDarkMode
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mainlayout'
+                  class="">
+                  MainLayout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebar'
+                  class="">
+                  Sidebar
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebarbuttons'
+                  class="">
+                  SideBarButtons
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebarcollapse'
+                  class="">
+                  SideBarCollapse
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebarlink'
+                  class="">
+                  SideBarLink
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#dashboard-1'
+                  class="">
+                  dashboard
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebaritems'
+                  class="">
+                  sideBarItems
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#maps'
+                  class="">
+                  maps
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pages'
+                  class="">
+                  pages
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#offcanvas'
+                  class="">
+                  Offcanvas
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#authenticationroutes'
+                  class="">
+                  AuthenticationRoutes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#errorroute'
+                  class="">
+                  ErrorRoute
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#routes'
+                  class="">
+                  Routes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mainroutes'
+                  class="">
+                  MainRoutes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#darkmodeslice'
+                  class="">
+                  darkModeSlice
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#createslice'
+                  class="">
+                  createSlice
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#initialstate'
+                  class="">
+                  initialState
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getusers'
+                  class="">
+                  getUsers
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getuserlogin'
+                  class="">
+                  getUserLogin
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#addnewuser'
+                  class="">
+                  addNewUser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#edituser'
+                  class="">
+                  editUser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#deleteuser'
+                  class="">
+                  deleteUser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usercrudslice'
+                  class="">
+                  userCrudSlice
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#store'
+                  class="">
+                  store
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getwindowdimensions'
+                  class="">
+                  getWindowDimensions
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usewindowdimensions'
+                  class="">
+                  useWindowDimensions
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='forgotpassformschema'>
+      forgotPassFormSchema
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This is the Forgot Password Form Schema</p>
+
+    <div class='pre p1 fill-light mt0'>forgotPassFormSchema</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='forgotpassvalidationschema'>
+      ForgotPassValidationSchema
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Forgot Password Form with inputs validator</p>
+
+    <div class='pre p1 fill-light mt0'>ForgotPassValidationSchema</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
+	    Form data
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>onSubmit.onSubmit</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        {email: string}
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='loginformschema'>
+      LoginFormSchema
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This is the Login Form Schema to control the user inputs</p>
+
+    <div class='pre p1 fill-light mt0'>LoginFormSchema</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='loginvalidationschema'>
+      LoginValidationSchema
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Login Form with inputs validator</p>
+
+    <div class='pre p1 fill-light mt0'>LoginValidationSchema</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
+	    Form data
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>onSubmit.onSubmit</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        {email: string, password: string, loginCheck: Boolean}
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='registerformschema'>
+      RegisterFormSchema
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This is the Registration Form Schema</p>
+
+    <div class='pre p1 fill-light mt0'>RegisterFormSchema</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='registervalidationschema'>
+      RegisterValidationSchema
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Registration Form with inputs validator</p>
+
+    <div class='pre p1 fill-light mt0'>RegisterValidationSchema</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
+	    Form data
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>onSubmit.onSubmit</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        {firstName: string, lastName: string, email: string, password: string, termCondCheck: Boolean}
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='card'>
+      Card
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Card</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(any)</code>
+	    from the views
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The card used to wrap the forms content
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='modal'>
+      Modal
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Modal</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(any)</code>
+	    from the view
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The modal used to show the terms and conditions text
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='strengthcolor'>
+      strengthColor
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>strengthColor</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>count</span> <code class='quiet'>(any)</code>
+	    to set name, color and percentage based on password strength
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        { label: string, color: string, percentage: string }
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='strengthindicator'>
+      strengthIndicator
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>strengthIndicator</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>number</span> <code class='quiet'>(any)</code>
+	    to indicate the password strength
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        strengths
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='forgotpass'>
+      ForgotPass
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>ForgotPass</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Forgot Password view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='login'>
+      Login
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Login</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Login view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='register'>
+      Register
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Register</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Register view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='errorpage'>
+      ErrorPage
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>new ErrorPage(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Error page view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='loadable'>
+      Loadable
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Loadable</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>Component</span> <code class='quiet'>(any)</code>
+	    Receive a component to be loadable with lazy loading
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        the loadable
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='loader'>
+      Loader
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Loader</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The loader for when the page is loading
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='linechart'>
+      LineChart
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>new LineChart(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Line Chart
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='piechart'>
+      PieChart
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>new PieChart(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Pie Chart
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='verticalchart'>
+      VerticalChart
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>new VerticalChart(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Vertical Chart
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='dashboard'>
+      Dashboard
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>new Dashboard(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Dashboard view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mapone'>
+      mapOne
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>mapOne(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Map one view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='maptwo'>
+      mapTwo
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>mapTwo(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Map two view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='authlayout'>
+      AuthLayout
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>AuthLayout</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        the authentication layout view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='errorlayout'>
+      ErrorLayout
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>ErrorLayout</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        the error layout view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='alertsection'>
+      AlertSection
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>AlertSection</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The alerts section of the header
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='header'>
+      Header
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Header</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        header section to the main layout
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usersettings'>
+      UserSettings
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>UserSettings</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The users section of the header
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='switchdarkmode'>
+      switchDarkMode
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Send true or false to redux to control dark mode state when darkModeSwitch is handled</p>
+
+    <div class='pre p1 fill-light mt0'>switchDarkMode</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mainlayout'>
+      MainLayout
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>MainLayout</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        the main layout view
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebar'>
+      Sidebar
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Sidebar</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        sidebar section to the main layout
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebarbuttons'>
+      SideBarButtons
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>SideBarButtons</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        the sidebar menu buttons
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebarcollapse'>
+      SideBarCollapse
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>SideBarCollapse</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(any)</code>
+	    from sideBarButtons
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        collapse button with all the links for the routing of the pages
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebarlink'>
+      SideBarLink
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>SideBarLink</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(any)</code>
+	    from sideBarButtons
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        all the links for the routing of the pages
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='dashboard-1'>
+      dashboard
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Dashboard group and items</p>
+
+    <div class='pre p1 fill-light mt0'>dashboard</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebaritems'>
+      sideBarItems
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Menu items to be used in the sidebar</p>
+
+    <div class='pre p1 fill-light mt0'>sideBarItems</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='maps'>
+      maps
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Maps group and items</p>
+
+    <div class='pre p1 fill-light mt0'>maps</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pages'>
+      pages
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Pages group and items</p>
+
+    <div class='pre p1 fill-light mt0'>pages</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='offcanvas'>
+      Offcanvas
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Offcanvas</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        offcanvas used like sidebar when the screen size is md
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='authenticationroutes'>
+      AuthenticationRoutes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This is the authencation routing</p>
+
+    <div class='pre p1 fill-light mt0'>AuthenticationRoutes</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='errorroute'>
+      ErrorRoute
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This is the error routing</p>
+
+    <div class='pre p1 fill-light mt0'>ErrorRoute</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='routes'>
+      Routes
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>new Routes(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        the routing render
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mainroutes'>
+      MainRoutes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This is the main routing</p>
+
+    <div class='pre p1 fill-light mt0'>MainRoutes</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='darkmodeslice'>
+      darkModeSlice
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Redux dark mode Slice</p>
+
+    <div class='pre p1 fill-light mt0'>darkModeSlice</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='createslice'>
+      createSlice
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Modules imports</p>
+
+    <div class='pre p1 fill-light mt0'>createSlice</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='initialstate'>
+      initialState
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Initial state of the slice</p>
+
+    <div class='pre p1 fill-light mt0'>initialState</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getusers'>
+      getUsers
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Redux AsyncThunk to call to get users from the server</p>
+
+    <div class='pre p1 fill-light mt0'>getUsers</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getuserlogin'>
+      getUserLogin
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Redux AsyncThunk to call to get users from the server</p>
+
+    <div class='pre p1 fill-light mt0'>getUserLogin</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='addnewuser'>
+      addNewUser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Redux AsyncThunk to call to add new users sending the data to the server</p>
+
+    <div class='pre p1 fill-light mt0'>addNewUser</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='edituser'>
+      editUser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Redux AsyncThunk to call to edit a user sending the id and the data to the server</p>
+
+    <div class='pre p1 fill-light mt0'>editUser</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='deleteuser'>
+      deleteUser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Redux AsyncThunk to call to delete a user sending the id to the server</p>
+
+    <div class='pre p1 fill-light mt0'>deleteUser</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usercrudslice'>
+      userCrudSlice
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Redux Slice</p>
+
+    <div class='pre p1 fill-light mt0'>userCrudSlice</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='store'>
+      store
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Store configuration</p>
+
+    <div class='pre p1 fill-light mt0'>store</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getwindowdimensions'>
+      getWindowDimensions
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This function gets the window dimensions</p>
+
+    <div class='pre p1 fill-light mt0'>getWindowDimensions(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        window dimensions (width, height)
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usewindowdimensions'>
+      useWindowDimensions
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This is the function to export the window dimensions</p>
+
+    <div class='pre p1 fill-light mt0'>useWindowDimensions(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        const windowDimensions
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
